@@ -1,0 +1,88 @@
+{
+  "metricas": [
+    {
+      "id": 1,
+      "titulo": "TOTAL DE ALCANCE",
+      "valor": "48.2K",
+      "descricao": "Usuarios unicos alcancados",
+      "variacao": "+12.4%",
+      "tipo": "positivo"
+    },
+    {
+      "id": 2,
+      "titulo": "ENGAJAMENTO",
+      "valor": "3.8K",
+      "descricao": "Curtidas, comentarios e compartilhamentos",
+      "variacao": "-2.1%",
+      "tipo": "negativo"
+    },
+    {
+      "id": 3,
+      "titulo": "CLIQUES",
+      "valor": "1.2K",
+      "descricao": "Cliques totais nos anuncios",
+      "variacao": "+8.7%",
+      "tipo": "positivo"
+    },
+    {
+      "id": 4,
+      "titulo": "CONVERSOES",
+      "valor": "94",
+      "descricao": "Leads e vendas gerados",
+      "variacao": "+5.3%",
+      "tipo": "positivo"
+    }
+  ],
+  "canais": [
+    {
+      "id": 1,
+      "nome": "Instagram",
+      "cliques": 14200,
+      "conversoes": 420
+    },
+    {
+      "id": 2,
+      "nome": "Facebook",
+      "cliques": 9800,
+      "conversoes": 310
+    },
+    {
+      "id": 3,
+      "nome": "TikTok",
+      "cliques": 7400,
+      "conversoes": 250
+    },
+    {
+      "id": 4,
+      "nome": "LinkedIn",
+      "cliques": 4200,
+      "conversoes": 110
+    }
+  ],
+  "campanhas": [
+    {
+      "id": 1,
+      "nome": "Black Friday Ads",
+      "canal": "Instagram",
+      "status": "Ativa",
+      "investimento": "R$ 4.800",
+      "resultado": "18.4K"
+    },
+    {
+      "id": 2,
+      "nome": "Lancamento Produto",
+      "canal": "Facebook",
+      "status": "Pausada",
+      "investimento": "R$ 2.100",
+      "resultado": "9.7K"
+    },
+    {
+      "id": 3,
+      "nome": "Conteudo Viral",
+      "canal": "TikTok",
+      "status": "Ativa",
+      "investimento": "R$ 1.650",
+      "resultado": "12.8K"
+    }
+  ]
+}
