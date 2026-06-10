@@ -1,3 +1,52 @@
+
+// definindo os modelos de metricas
+type Metric = {
+  id : number
+  titulo : string
+  valor : string
+  descricao: string
+  variacao : string
+  tipo: "positivo" | "negativo"
+}
+
+type Channel = {
+  id : number
+  nome : string
+  cliques : number
+  conversoes : number
+
+} 
+
+type Campaign = {
+    id: number
+    nome : string
+    canal : string 
+    status : 'Ativa' | "Pausada" | 'Finalizada'
+    investimento : string
+    resultado : string
+
+}
+
+// puxando os valores dos tipo de dados 
+type DashboardData = {
+  metricas : Metric[]
+  canais : Channel[]
+  campanhas : Campaign[]
+}
+
+// fazendo a função para fazer o consumo da API
+
+async function fethDashboardData(): Promise<DashboardData>{
+  const response = await fetch("http://localhost:3000/db")
+  if (!response.ok){
+    throw new Error('Erro ao buscar os dados do dasborard')
+  }
+  return response.json()
+}
+
+
+
+
 // capitcaçao de de array com objetos
 const metrics = [
   {
