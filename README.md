@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Marketing Metrics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard demonstrativo de marketing desenvolvido com React, TypeScript, Vite e Tailwind CSS.
 
-Currently, two official plugins are available:
+O projeto usa dados simulados em JSON para apresentar uma experiencia completa de painel analitico: metricas, graficos, filtros, busca e tabela de campanhas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Cards de resumo com alcance, engajamento, sessoes e conversoes.
+- Grafico de crescimento por horario.
+- Grafico comparativo por canal.
+- Busca por nome de campanha ou canal.
+- Filtro por periodo: Hoje, 7 dias e 30 dias.
+- Filtro por status: Todos, Ativa, Pausada e Finalizada.
+- Navegacao lateral com rolagem suave entre secoes.
+- Tabela responsiva de campanhas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Como Rodar
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Instale as dependencias:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Inicie o servidor de desenvolvimento:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Abra no navegador:
+
+```text
+http://127.0.0.1:5173
+```
+
+## Scripts
+
+```bash
+npm run dev
+npm run build
+npm run lint
+npm run preview
+```
+
+## Dados
+
+Os dados demonstrativos ficam em `public/db.json`.
+
+Tambem existe uma copia em `db.json` na raiz do projeto para facilitar testes com ferramentas como JSON Server, se necessario.
+
+## Sobre o Projeto
+
+Este dashboard foi criado para portfolio e apresentacao profissional. Ele simula um painel de acompanhamento de campanhas digitais, com foco em interface, organizacao de dados, filtros e visualizacao clara de metricas.
