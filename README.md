@@ -152,9 +152,12 @@ Este projeto evidencia as seguintes competências:
 
 ## 👤 Autor
 
-<p>
-  Desenvolvido por <strong>Marcos Simões</strong>
-</p>
+| [<img loading="lazy" src="https://github.com/DevWizardMarcos/DevWizardMarcos/blob/master/banners_novos/autor.png" width=150><br><sub>DevWizardMarcos</sub>](https://github.com/DevWizardMarcos) |
+| :---: |
+
+### 📩 Contato
+
+Se quiser saber mais sobre mim, entre em contato através do meu [LinkedIn](https://www.linkedin.com/in/marcos-simoes-ms/) ou visite meu.
 
 <p>
   <a href="https://github.com/DevWizardMarcos">
