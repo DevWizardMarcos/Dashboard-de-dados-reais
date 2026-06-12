@@ -33,7 +33,7 @@ Todos os dados são servidos via `public/db.json`, replicando o comportamento de
 ## 🖥️ Preview
 
 <p align="center">
-  <img src="./src/assets/hero.png" alt="Preview do Dashboard de Marketing" width="100%" />
+  <img src="bannerRead/demo_dashboard_readme.gif" alt="Preview do Dashboard de Marketing" width="100%" />
 </p>
 
 ---
